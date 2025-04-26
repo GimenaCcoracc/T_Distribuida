@@ -1,0 +1,7 @@
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/issue/IssueApplication.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/issue/controller/IssueController.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/issue/dto/IssueKafkaEventDto.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/issue/model/Issue.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/issue/repository/IssueRepository.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/issue/service/IssueService.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/issue/service/kafkaProducerService.java
