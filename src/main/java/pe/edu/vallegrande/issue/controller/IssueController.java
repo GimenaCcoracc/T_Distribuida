@@ -1,4 +1,4 @@
-package pe.edu.vallegrande.issue.rest;
+package pe.edu.vallegrande.issue.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -20,10 +20,10 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/tema")
 @Slf4j
 @CrossOrigin(origins = "*")
-public class IssueRestController {
+public class IssueController {
     private final IssueService issueService;
 
-    public IssueRestController(IssueService issueService) {
+    public IssueController(IssueService issueService) {
         this.issueService = issueService;
     }
 
