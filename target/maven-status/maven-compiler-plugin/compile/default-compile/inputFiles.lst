@@ -1,0 +1,13 @@
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/AttendanceApplication.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/config/CorsConfig.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/config/SecurityConfig.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/controller/AttendanceController.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/dto/AttendanceKafkaEventDto.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/dto/IssueKafkaEventDto.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/model/Attendance.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/model/Issue.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/repository/AttendanceRepository.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/repository/IssueRepository.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/service/AttendanceService.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/service/KafkaConsumerService.java
+/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/attendance/service/kafkaProducerService.java

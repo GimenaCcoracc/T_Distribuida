@@ -64,6 +64,46 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+     		<groupId>org.springdoc</groupId>
+     		<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+     		<version>2.1.0</version>
+		</dependency>
+		<!-- Kafka Producer -->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+		<!-- Jackson (para ObjectMapper en KafkaProducerService) -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		 <!-- Jakarta Validation API (for Jakarta EE 9 and later) -->
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+			<version>3.0.0</version> <!-- Use the latest version compatible with Jakarta EE 9 -->
+		</dependency>
+		<dependency>
+        	<groupId>org.hibernate.validator</groupId>
+        	<artifactId>hibernate-validator</artifactId>
+        	<version>6.2.0.Final</version> <!-- Using the stable version that works with Jakarta EE 9 -->
+    	</dependency>
+
+		<!-- Seguridad JWT (Firebase) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-oauth2-resource-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-oauth2-jose</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
