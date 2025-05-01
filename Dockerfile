@@ -1,13 +1,12 @@
-FROM openjdk:17-jdk-slim
-
-# Definir el directorio de trabajo
+FROM maven:3.9.0-eclipse-temurin-17 AS builder
 WORKDIR /app
+COPY pom.xml ./
+COPY src ./src
+RUN mvn clean install -DskipTests
 
-# Copiar el archivo JAR generado en el directorio de trabajo
-COPY target/issue-0.0.1-SNAPSHOT.jar issue-kafka.jar
+FROM eclipse-temurin:17-jdk-alpine
+WORKDIR /app
+COPY --from=builder /app/target/*.jar app.jar
 
-# Exponer el puerto configurado (8082)
 EXPOSE 8082
-
-# Comando para ejecutar el servicio de Spring Boot
-CMD ["java", "-jar", "issue-kafka.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
