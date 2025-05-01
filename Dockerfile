@@ -1,6 +1,6 @@
 FROM openjdk:17-jdk-slim
 
-# Definir el directorio de 
+# Definir el directorio 
 WORKDIR /app
 
 # Copiar el archivo JAR generado en el directorio de trabajo
