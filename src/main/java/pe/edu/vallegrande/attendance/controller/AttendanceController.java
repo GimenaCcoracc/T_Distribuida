@@ -18,7 +18,7 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/asistencia")
 @Slf4j
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AttendanceController {
     private final AttendanceService attendanceService;
 
