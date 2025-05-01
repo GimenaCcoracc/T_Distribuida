@@ -1,8 +1,0 @@
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/WorkshopApplication.java
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/config/SecurityConfig.java
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/controller/WorkshopController.java
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/dto/WorkshopKafkaEventDto.java
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/model/Workshop.java
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/repository/WorkshopRepository.java
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/service/KafkaProducerService.java
-/workspaces/T_Distribuida/src/main/java/pe/edu/vallegrande/workshop/service/WorkshopService.java
