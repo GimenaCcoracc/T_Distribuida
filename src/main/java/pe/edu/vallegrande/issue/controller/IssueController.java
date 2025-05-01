@@ -19,7 +19,7 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/tema")
 @Slf4j
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 public class IssueController {
     private final IssueService issueService;
 
