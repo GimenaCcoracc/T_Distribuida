@@ -17,28 +17,29 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
 @EnableWebFluxSecurity
 public class SecurityConfig {
 
-    @Bean
-    public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
-        return http
-                .csrf(ServerHttpSecurity.CsrfSpec::disable)
-                .authorizeExchange(auth -> auth
-                        .pathMatchers("/swagger-ui.html").permitAll()
-                        .anyExchange().authenticated()
-                )
-                .oauth2ResourceServer(oauth2 -> oauth2
-                        .jwt(Customizer.withDefaults())
-                )
-                .cors(cors -> cors
-                        .configurationSource(exchange -> {
-                            var config = new org.springframework.web.cors.CorsConfiguration();
-                            config.setAllowCredentials(true);
-                            // Especifica el origen permitido
-                            config.addAllowedOrigin("http://localhost:4200");
-                            config.addAllowedHeader("*");
-                            config.addAllowedMethod("*");
-                            return config;
-                        })
-                )
-                .build();
-    }
+        @Bean
+        public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
+            return http
+                    .csrf(ServerHttpSecurity.CsrfSpec::disable)
+                    .authorizeExchange(auth -> auth
+                            .pathMatchers("/swagger-ui.html", "/api/workshops/active").permitAll()
+                            .anyExchange().authenticated()
+                    )
+                    .oauth2ResourceServer(oauth2 -> oauth2
+                            .jwt(Customizer.withDefaults())
+                    )
+                    .cors(cors -> cors
+                            .configurationSource(exchange -> {
+                                var config = new org.springframework.web.cors.CorsConfiguration();
+                                config.setAllowCredentials(true);
+                                // Especifica el origen permitido
+                                config.addAllowedOrigin("http://localhost:4200"); // Cambia esto si tu frontend está en otro origen
+                                config.addAllowedHeader("*");
+                                config.addAllowedMethod("*");
+                                return config;
+                            })
+                    )
+                    .build();
+        }
+    
 }
