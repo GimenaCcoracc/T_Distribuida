@@ -7,7 +7,8 @@ import java.time.LocalDate;
 public class WorkshopKafkaEventDto {
     private Long id;
     private String name;
-    private LocalDate dateStart;
-    private LocalDate dateEnd;
-    private String status;
+    private String description;
+    private LocalDate startDate;
+    private LocalDate endDate;
+    private String state;
 }

@@ -86,9 +86,10 @@ public class WorkshopService {
         WorkshopKafkaEventDto dto = new WorkshopKafkaEventDto();
         dto.setId(workshop.getId());
         dto.setName(workshop.getName());
-        dto.setDateStart(workshop.getStartDate());
-        dto.setDateEnd(workshop.getEndDate());
-        dto.setStatus(workshop.getState());
+        dto.setDescription(workshop.getDescription());
+        dto.setStartDate(workshop.getStartDate());
+        dto.setEndDate(workshop.getEndDate());
+        dto.setState(workshop.getState());
         return dto;
     }
 
